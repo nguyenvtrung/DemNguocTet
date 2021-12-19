@@ -17,7 +17,7 @@
     position: absolute;
     width: 178px;
     right: 0;
-    bottom: 50px;
+    bottom: 10px;
     transform: rotate(10deg);
     animation: family 2s linear infinite;
   }
