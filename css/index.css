@@ -1,0 +1,198 @@
+/* THAY ĐỔI FONT P2 -- Thay đổi font chữ số đếm CSS */
+
+@font-face {
+    font-family: font-trung; 
+    src: url(../Facebook.com_Puti78/font/FancyHeartScript.ttf);
+}
+@font-face {
+    font-family: font-trung-2; 
+    src: url(../Facebook.com_Puti78/font/LoveLight-Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection
+{
+    background-color: pink ;
+    color: #000;
+    
+}
+body
+{
+    background: url(https://mondaycareer.com/wp-content/uploads/2020/11/background-%C4%91%E1%BA%B9p-t%E1%BA%BFt-15.png);
+    background-attachment: fixed;
+    overflow: hidden;
+}
+:root
+{
+    --color-heart : rgb(210 41 40);
+    --color-heart-shadow : rgb(255, 230, 0);
+    --size-heart : 120px;
+    --avatar-img : 150px;
+}
+[trung="nguyenvtrung"]
+{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+[trung="nguyenvtrung"] .title,[trung="nguyenvtrung"] .con
+{
+    transform: rotate(-45deg);
+    position: absolute;
+}
+[trung="nguyenvtrung"] .title
+{
+    right: 0px;
+    bottom: 5px;
+    font-family: font-trung-2; 
+    font-size: calc(var(--size-heart) / 4);
+    letter-spacing: 2px;
+    font-weight: 590;
+}
+
+[trung="nguyenvtrung"] .con::before
+{
+    content: 'Còn';
+    left: 0px;
+    top: 5px;
+    font-family: font-trung-2; 
+    font-size: calc(var(--size-heart) / 4);
+    letter-spacing: 2px;
+    font-weight: 590;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+.heart ,.heart::before ,.heart::after
+{
+    box-shadow: 0 0 10px 10px var(--color-heart-shadow);
+    animation: border_heart 5s linear infinite;
+}
+
+.heart
+{
+    
+    position: relative;
+    top: 120%;
+    left: 20%;
+    width: var(--size-heart);
+    height: var(--size-heart);
+    background-color: var(--color-heart);
+    transform: rotate(45deg) translate(-50%,-50%);
+}
+
+#ngay,#gio,#phut,#giay
+{
+    position: absolute;
+    font-family: font-trung; 
+    top: 15%;
+    left: 55%;
+    transform: rotate(-45deg) translate(-50%,-50%);
+    font-size: calc(var(--size-heart) / 2);
+    z-index: 1;
+} 
+
+.ngay
+{
+    grid-area: 3/2;
+}
+.gio
+{
+    grid-area: 4/3;
+}
+.phut
+{
+    grid-area: 3/4;
+}
+.giay
+{
+    grid-area: 4/5;
+}
+
+
+.title_heart_time
+{
+    position: absolute;
+    transform: rotate(-45deg);
+    font-size: calc(var(--size-heart) / 5.5);
+    font-family: 'MonteCarlo', cursive;
+    z-index: 2;
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+
+[trung="trangtri"]
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+[trung="trangtri"] img:nth-child(1)
+{
+    position: absolute;
+    width: 278px;
+    right: 0;
+    bottom: 0;
+    transform: rotate(10deg);
+    animation: family 2s linear infinite;
+}
+@keyframes family {
+    0%,100%
+    {
+        transform: rotate(0deg);
+    }    
+    50%
+    {
+        transform: rotateZ(10deg);
+    }
+}
+
+[trung="trangtri"] img:nth-child(2)
+{
+    position: absolute;
+    width: 278px;
+    top: 0;
+    left: 0;
+}
+
+[trung="trangtri"] img:nth-child(3)
+{
+    position: absolute;
+    width: 278px;
+    top: 0;
+    right: 0;
+}
+
+[trung="trangtri"] img:nth-child(4)
+{
+    position: absolute;
+    width: 178px;
+    bottom: 0;
+    left: 0;
+}
+

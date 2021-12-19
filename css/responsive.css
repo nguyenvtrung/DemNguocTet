@@ -1,0 +1,39 @@
+@media (min-width: 1024px) {
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+}
+@media (max-width: 740px) {
+  :root {
+    --size-heart: 78px;
+  }
+  .heart {
+    top: 50%;
+    left: 0%;
+  }
+
+
+  [trung="trangtri"] img:nth-child(1)
+  {
+    position: absolute;
+    width: 178px;
+    right: 0;
+    bottom: 0;
+    transform: rotate(10deg);
+    animation: family 2s linear infinite;
+  }
+  [trung="trangtri"] img:nth-child(2)
+  {
+    position: absolute;
+    width: 220px;
+    top: 0;
+    left: 0;
+  }
+
+  [trung="trangtri"] img:nth-child(3)
+  {
+    position: absolute;
+    width: 220px;
+    top: 100px;
+    right: 0;
+  }
+}

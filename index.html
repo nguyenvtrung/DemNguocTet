@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Đếm ngược tết</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://cdn.vn.garenanow.com/web/lol-product/home/images/articles/htl.vn_zeus/1-champion/nidalee/Nidalee_Cougar_Render.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./Facebook.com_Puti78/TRUNG.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="./js/js.js"></script>
+    <link rel="stylesheet" href="./css/hieuung.css">
+    
+</head>
+<body>
+
+
+  <div trung="nguyenvtrung" >
+    <div class="heart ngay" trung="a" >
+      <div class="title">
+        <p>Ngày</p>
+      </div>
+      <div id="ngay" class="heart_time"></div>
+      <div class="con"></div>
+    </div>
+    <div class="heart gio">
+      <div class="title">
+        <p>Giờ</p>
+      </div>
+      <div id="gio" class="heart_time"></div>
+      <div class="con"></div>
+    </div>
+    <div class="heart phut" > 
+      <div class="title">
+        <p>Phút</p>
+      </div>
+      <div id="phut" class="heart_time"></div>
+      <div class="con"></div>
+    </div>
+    <div class="heart giay">
+      <div class="title">
+        <p>Giây</p>
+      </div>
+      <div id="giay" class="heart_time"></div>
+    <div class="con"></div>
+    </div> 
+  </div>
+
+  <div trung="trangtri">
+    <img src="./img/family.png">
+    <img src="./img/hoa-dao2.png" >
+    <img src="./img/hoa-mai.png" >
+    <img src="./img/gif/Trung_than_tai.gif">
+  </div>
+  <div trung="audio">
+    <audio src="./audio/nhactet.mp3" autoplay loop></audio>
+  </div>
+
+  <div id="hieuung"></div>
+  <script>
+    function star() {
+      let soLuong = 100;
+      let body = document.querySelector("#hieuung");
+      let i = 1;
+      while (i < soLuong) {
+        let trung = document.createElement("i");
+        let sizeWidth = Math.random() * 10;
+        let posLeft = Math.floor(Math.random() * window.innerWidth);
+        let delay = Math.random() * -20;
+    
+        trung.style.left = posLeft + "px";
+        trung.style.animationDelay = delay + "s";
+        trung.style.width = 0.2 + sizeWidth + "px";
+        trung.style.height = 0.2 + sizeWidth + "px";
+        body.appendChild(trung);
+        i++;
+      }
+    }
+    star();
+  </script>
+  </body>
+</html>
