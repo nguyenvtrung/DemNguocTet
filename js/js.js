@@ -1,4 +1,4 @@
-var Trung_Ngay_Bat_Dau = new Date("Jan 22,2023 00:00:00").getTime();
+var Trung_Ngay_Bat_Dau = new Date("Feb 10,2024 00:00:00").getTime();
 // Date("tháng ngày,năm giờ:phút:giây")
 // Chỉ cần chỉnh sửa ngày ở dòng đầu là xong nha 
 // Tháng 1: Jan
